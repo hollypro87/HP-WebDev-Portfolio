@@ -1,6 +1,3 @@
 # Responsive-Porfolio
 
-
-
-
-Royalty free image link http://unrestrictedstock.com/projects/seamless-fabric-patterns-free-stock-vector-set-vol2/
+This assignment has been a total trip. I originally coded everything for css and then realized once I was finishing up that it needed to be bootstrap.
