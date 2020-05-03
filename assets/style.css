@@ -26,3 +26,10 @@ body {
   font-weight: bold;
   color: #000000;
 }
+
+.repo-title {
+  color: #ee7752;
+}
+.portfolio-title {
+  color: #23a6d5;
+}
