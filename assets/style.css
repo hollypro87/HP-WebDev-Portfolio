@@ -1,86 +1,28 @@
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  color: #777;
-  background-color: silver;
-  background-image: radial-gradient(
-      circle at 100% 150%,
-      silver 24%,
-      teal 25%,
-      teal 28%,
-      silver 29%,
-      silver 36%,
-      teal 36%,
-      teal 40%,
-      transparent 40%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 0 150%,
-      silver 24%,
-      teal 25%,
-      teal 28%,
-      silver 29%,
-      silver 36%,
-      teal 36%,
-      teal 40%,
-      transparent 40%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 50% 100%,
-      teal 10%,
-      silver 11%,
-      silver 23%,
-      teal 24%,
-      teal 30%,
-      silver 31%,
-      silver 43%,
-      teal 44%,
-      teal 50%,
-      silver 51%,
-      silver 63%,
-      teal 64%,
-      teal 71%,
-      transparent 71%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 100% 50%,
-      teal 5%,
-      silver 6%,
-      silver 15%,
-      teal 16%,
-      teal 20%,
-      silver 21%,
-      silver 30%,
-      teal 31%,
-      teal 35%,
-      silver 36%,
-      silver 45%,
-      teal 46%,
-      teal 49%,
-      transparent 50%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 0 50%,
-      teal 5%,
-      silver 6%,
-      silver 15%,
-      teal 16%,
-      teal 20%,
-      silver 21%,
-      silver 30%,
-      teal 31%,
-      teal 35%,
-      silver 36%,
-      silver 45%,
-      teal 46%,
-      teal 49%,
-      transparent 50%,
-      transparent
-    );
-  background-size: 100px 50px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+
+.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }

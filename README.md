@@ -16,4 +16,4 @@ I struggled also with getting the margins and padding right between the image an
 
 I adjusted the portfolio tiles to relative alignment instead of absolute.
 
-Again, this is what I could come up with after coding the entire page with css. Bootstrap is not my forte.
+credit for background animation to https://codepen.io/P1N2O/pen/xxbjYqx
