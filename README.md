@@ -10,10 +10,11 @@ I kept going back and forth between having the footer fixed and simply at the bo
 
 Wrapped text on "about me" page to agree with the image. Also trying to adjust the margins to get the layout right.
 
-Attempted messing with the overflow property but ended up keeping it as is.
-
-I struggled also with getting the margins and padding right between the image and text on the about me page.
-
-I adjusted the portfolio tiles to relative alignment instead of absolute.
-
+Update:
 credit for background animation to https://codepen.io/P1N2O/pen/xxbjYqx
+Added background color gradient animation.
+Cleaned up code and look of site.
+Added a google form as I couldn't get the email function to work.
+Adjusted Navbar.
+Added images and links for portfolio to current projects and repos.
+Overall cleaner feel to the site.
