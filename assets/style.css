@@ -18,7 +18,6 @@ body {
 .transbox {
   margin: 30px;
   background-color: #ffffff;
-  border: 1px solid black;
 }
 
 .transbox p {
@@ -28,10 +27,10 @@ body {
 }
 
 .repo-title {
-  color: #ee7752;
+  color: #e73c7e;
 }
 .portfolio-title {
-  color: #23a6d5;
+  color: #23d5ab;
 }
 iframe {
   position: relative;
@@ -39,4 +38,43 @@ iframe {
 .form {
   text-align: center;
   display: inline-block;
+}
+
+.blur-img {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+  margin: 4px;
+}
+
+.blur-img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.blur-img:hover img {
+  filter: blur(2px) brightness(60%);
+  box-shadow: 0 0 16px cyan;
+}
+
+.blur-img :not(img) {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  outline-color: white;
+}
+
+.blur-img h3 {
+  top: 50%;
+}
+
+.blur-img:hover :not(img) {
+  opacity: 1;
 }
