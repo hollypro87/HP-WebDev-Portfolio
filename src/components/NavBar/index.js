@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
         zIndex: 100,
         position: props.isSticky ? "fixed" : "initial",
         top: props.isSticky ? 0 : "",
-        background: "#fafafa",
+        background: "#000000",
     }),
     underline: {
         width: "100%",
@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
         cursor: "pointer",
         textTransform: "uppercase",
         fontFamily: "'Lato', sans-serif",
+        color: "white",
         fontWeight: 500,
         "&:hover": {
             color: "grey",

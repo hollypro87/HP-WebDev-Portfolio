@@ -102,7 +102,7 @@ const useStyles = makeStyles(theme => ({
         width: "100%",
         height: "1px",
         borderRadius: "4px",
-        background: "black",
+        background: "white",
         position: "absolute",
         bottom: "-3px"
     }
