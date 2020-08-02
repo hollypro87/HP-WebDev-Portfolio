@@ -4,7 +4,7 @@ import Title from "../Title";
 
 const useStyles = makeStyles(theme => ({
     root: {
-        background: "#191919",
+        background: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
         paddingTop: theme.spacing(10),
         "@media (max-width: 1280px)": {
             padding: theme.spacing(10, 10, 0, 10),
@@ -54,7 +54,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     footer: {
-        background: "#191919",
+        background: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
         color: "#fff",
         display: "flex",
         justifyContent: "center"
@@ -81,9 +81,6 @@ export default function Contact() {
                             </Link>
                             <Link href="https://github.com/hollypro87" target="_blank" className={classes.networksItem}>
                                 <Typography variant="h6">Github</Typography>
-                            </Link>
-                            <Link href="https://github.com/Victoire44" target="_blank" className={classes.networksItem}>
-                                <Typography variant="h6">Resume</Typography>
                             </Link>
                         </Box>
                     </Box>

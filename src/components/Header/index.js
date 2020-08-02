@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         height: "100vh",
         position: "relative",
-        background: "#fafafa"
+        background: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)"
     },
     toolbar: {
         paddingRight: 0,

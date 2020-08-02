@@ -70,12 +70,12 @@ export default function NavBar({ isSticky }) {
             to: "header"
         },
         {
-            menuItem: "Projects",
-            to: "projects"
-        },
-        {
             menuItem: "About",
             to: "about"
+        },
+        {
+            menuItem: "Projects",
+            to: "projects"
         },
         {
             menuItem: "Skills",

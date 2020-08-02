@@ -3,7 +3,6 @@ import { makeStyles, Typography, Box, Container, Grid } from "@material-ui/core"
 import portrait from "./assets/site_image_me.png";
 import bean from "./assets/bean.jpeg";
 import under from "./assets/bean-under.jpeg";
-import botanical from "./assets/botanical.jpeg";
 import skyline from "./assets/skyline.jpeg";
 import Title from "../Title";
 import { motion, useTransform, useViewportScroll, useMotionValue } from "framer-motion"
@@ -70,21 +69,10 @@ export default function About() {
                             scale
                         }}
                     />
+
                     <motion.img
                         src={under}
                         alt="Under the Bean"
-                        style={{
-                            height: "55px",
-                            position: "absolute",
-                            top: "300px",
-                            left: "350px",
-                            filter: "grayscale(60%)",
-                            scale
-                        }}
-                    />
-                    <motion.img
-                        src={botanical}
-                        alt="Botanical Gardens"
                         style={{
                             height: "115px",
                             position: "absolute",
@@ -100,8 +88,8 @@ export default function About() {
                         style={{
                             height: "170px",
                             position: "absolute",
-                            top: "400px",
-                            left: "270px",
+                            top: "300px",
+                            left: "370px",
                             scale
                         }}
                     />

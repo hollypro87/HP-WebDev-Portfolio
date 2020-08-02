@@ -3,11 +3,11 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Works from "./components/Works";
+import Works from "./components/Projects";
 import Contact from "./components/Contact";
 import { Helmet } from "react-helmet";
 import FaviconSvg from "./assets/img/logo-nobg.png";
-import FaviconPng from "./assets/img/HP Logo.png";
+import FaviconPng from "./assets/img/logo-nobg.png";
 import { makeStyles } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
@@ -36,8 +36,8 @@ export default function App() {
       </Helmet>
       <ThemeProvider theme={theme}>
         <Header />
-        <Works />
         <About />
+        <Works />
         <Skills />
         <Contact />
       </ThemeProvider>

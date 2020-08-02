@@ -3,11 +3,11 @@ import { makeStyles, Container, Typography, Paper, Grid, Link } from "@material-
 import html from "./assets/html.png";
 import css from "./assets/css.png";
 import bootstrap from "./assets/bootstrap.png";
-import material from "./assets/material.svg";
+import material from "./assets/material.png";
 import javascript from "./assets/js.png";
 import react from "./assets/react.png";
 import jquery from "./assets/jquery.png";
-import node from "./assets/node.png";
+import node from "./assets/node.jpg";
 import mysql from "./assets/mysql.png";
 import mongo from "./assets/mongodb.png";
 import Title from "../Title";
