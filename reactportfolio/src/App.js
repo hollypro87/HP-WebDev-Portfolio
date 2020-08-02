@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
+import Header from "./components/Header";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Works from "./components/Works";
+import Contact from "./components/Contact";
+import { Helmet } from "react-helmet";
+import FaviconSvg from "./assets/img/logo-nobg.png";
+import FaviconPng from "./assets/img/HP Logo.png";
+import { makeStyles } from "@material-ui/core/styles";
 
-function App() {
+const theme = createMuiTheme({
+  spacing: 5,
+})
+const useStyles = makeStyles(theme => ({
+  body: {
+    boxSizing: "border-box"
+  }
+}))
+
+export default function App() {
+  const classes = useStyles()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Spartan&family=Poiret+One&display=swap" rel="stylesheet" />
+        <link rel="icon" type="image/svg+xml" href={FaviconSvg} />
+        <link rel="icon" type="image/png" href={FaviconPng} />
+        <title>Holly Prothe</title>
+        <meta name="author" content="Holly Prothe" />
+        <meta property="og:type" content="website" />
+        <meta name="description" content="Holly Prothe, full stack developer based in Kansas City" />
+        <body className={classes.body} />
+      </Helmet>
+      <ThemeProvider theme={theme}>
+        <Header />
+        <Works />
+        <About />
+        <Skills />
+        <Contact />
+      </ThemeProvider>
     </div>
-  );
+  )
 }
-
-export default App;
