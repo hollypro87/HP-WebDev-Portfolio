@@ -8,7 +8,6 @@ import fitness from "../Projects/assets/fitness.png";
 import notes from "../Projects/assets/Note-taker.png";
 import quarantinis from "../Projects/assets/project1.png";
 import quiz from "../Projects/assets/quiz.png";
-import planner from "../Projects/assets/Daily Planner.png";
 import weather from "../Projects/assets/weather.png";
 import Title from "../Title";
 import Section from "../Section";
@@ -18,7 +17,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: "center",
         "& .MuiPaper-rounded": {
             borderRadius: 0
-        }
+        },
     }
 }));
 
@@ -27,14 +26,14 @@ function arrayEquals(array1, array2) {
     return array1.length === array2.length && array1.every(value => array2.includes(value))
 }
 
-export default function Works() {
+export default function Projects() {
     const classes = useStyles()
 
     const all = ['projects', 'team']
     const [categoriesToShow, setCategoriesToShow] = React.useState(all)
 
     return (
-        <Section id="works" style={{ background: "#f5f5f5" }}>
+        <Section id="projects" style={{ background: "#f5f5f5" }}>
             <Title>
                 <Typography>Projects</Typography>
             </Title>
@@ -146,21 +145,6 @@ export default function Works() {
                                     text="Food and drink recipe website."
                                     github="https://github.com/hollypro87/Project_1"
                                     heroku="https://hollypro87.github.io/Project_1/"
-                                    locked={false}
-                                />
-                            </Paper>
-                        </Grid>
-                        : null)}
-                    {(categoriesToShow.includes("projects") ?
-                        <Grid item md={4} sm={6} xs={12}>
-                            <Paper className={classes.paper}>
-                                <Card
-                                    image={planner}
-                                    title="Daily Planner"
-                                    alt="Daily Planner"
-                                    text="An hourly planner for your day."
-                                    github="https://github.com/hollypro87/Work-Day-Scheduler"
-                                    heroku="https://hollypro87.github.io/Work-Day-Scheduler/"
                                     locked={false}
                                 />
                             </Paper>

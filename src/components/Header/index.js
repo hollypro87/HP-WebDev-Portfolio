@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => ({
             },
         },
         "& .MuiTypography-root": {
-            fontFamily: "'Poiret One', cursive",
+            fontFamily: "'Shadows Into Light', cursive",
             fontSize: "3.7vw",
             fontWeight: 800,
             "@media (max-width: 600px)": {

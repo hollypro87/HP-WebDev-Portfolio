@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles, Container, AppBar, Toolbar, Typography, Box, Divider, Link } from "@material-ui/core";
 import Title from "../Title";
+import resume from "./assets/Resume2020.pdf";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -18,6 +19,14 @@ const useStyles = makeStyles(theme => ({
         "& .MuiLink-root": {
             textDecoration: "none",
             color: "#fff"
+        },
+        "& .MuiTypography-root": {
+            fontFamily: "'Shadows Into Light', cursive",
+            fontSize: "1.7vw",
+            fontWeight: 800,
+            "@media (max-width: 600px)": {
+                fontSize: "7vw"
+            },
         }
     },
     networks: {
@@ -69,7 +78,7 @@ export default function Contact() {
             <AppBar position="static" className={classes.root}>
                 <Container maxWidth="lg">
                     <Title>
-                        <Typography>Keep in touch</Typography>
+                        <Typography>Get in touch</Typography>
                     </Title>
                     <Box className={classes.contact}>
                         <Link href="mailto:hollyprothe1@gmail.com" target="_blank">
@@ -81,6 +90,9 @@ export default function Contact() {
                             </Link>
                             <Link href="https://github.com/hollypro87" target="_blank" className={classes.networksItem}>
                                 <Typography variant="h6">Github</Typography>
+                            </Link>
+                            <Link href={resume} target="_blank" className={classes.networksItem}>
+                                <Typography variant="h6">Resume</Typography>
                             </Link>
                         </Box>
                     </Box>

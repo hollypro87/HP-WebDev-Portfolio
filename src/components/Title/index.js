@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const useStyles = makeStyles(theme => ({
     title: {
         fontSize: theme.spacing(6),
-        fontFamily: "'Poiret One', cursive",
+        fontFamily: "'Arial', cursive",
         fontWeight: 800,
         textTransform: "uppercase",
         "@media (max-width: 600px)": {

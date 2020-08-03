@@ -25,22 +25,22 @@ const useStyles = makeStyles(theme => ({
     }),
     underline: {
         width: "100%",
-        height: "1px",
+        height: "3px",
         borderRadius: "4px",
-        background: "grey",
+        background: "white",
         position: "absolute",
-        bottom: "-21px"
+        bottom: "-11px"
     },
     menuItem: {
-        fontSize: "1.2vw",
+        fontSize: "1.6vw",
         marginLeft: theme.spacing(3),
         marginRight: theme.spacing(3),
         position: "relative",
         cursor: "pointer",
         textTransform: "uppercase",
-        fontFamily: "'Lato', sans-serif",
+        fontFamily: "'Shadows Into Light', cursive",
         color: "white",
-        fontWeight: 500,
+        fontWeight: 400,
         "&:hover": {
             color: "grey",
         },

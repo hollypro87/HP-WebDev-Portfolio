@@ -3,7 +3,7 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Works from "./components/Projects";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { Helmet } from "react-helmet";
 import FaviconSvg from "./assets/img/logo-nobg.png";
@@ -15,7 +15,7 @@ const theme = createMuiTheme({
 })
 const useStyles = makeStyles(theme => ({
   body: {
-    boxSizing: "border-box"
+    boxSizing: "border-box",
   }
 }))
 
@@ -25,7 +25,7 @@ export default function App() {
   return (
     <div>
       <Helmet>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Spartan&family=Poiret+One&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
         <link rel="icon" type="image/svg+xml" href={FaviconSvg} />
         <link rel="icon" type="image/png" href={FaviconPng} />
         <title>Holly Prothe</title>
@@ -37,7 +37,7 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <Header />
         <About />
-        <Works />
+        <Projects />
         <Skills />
         <Contact />
       </ThemeProvider>

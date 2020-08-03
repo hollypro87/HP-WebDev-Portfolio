@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles, IconButton, Link } from "@material-ui/core";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import EmailIcon from "@material-ui/icons/Email";
+import EmailIcon from "@material-ui/icons/AlternateEmail";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { motion } from "framer-motion";
 

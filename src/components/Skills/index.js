@@ -16,7 +16,7 @@ import Section from "../Section";
 const useStyles = makeStyles(theme => ({
     root: {
         "& .MuiTypography-root": {
-            fontFamily: "'Poiret One', cursive",
+            fontFamily: "'Arial', sans-serif",
             fontWeight: 800
         },
         "& .MuiGrid-item": {
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
         "& .MuiGrid-root": {
             display: "flex",
             justifyContent: "center",
-        }
+        },
     },
     logos: {
         height: 60,
